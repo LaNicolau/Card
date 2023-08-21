@@ -1,0 +1,47 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top {
+    position: relative;
+    width: 230px;
+}
+
+.background {
+    width: 100%;
+    height: 220px;
+    background-image: url('../images/bg-main-mobile.png');
+    background-size: cover;
+}
+
+@media(min-width: 1024px) {
+    section {
+        display: flex;
+        flex-direction: initial;
+        height: 100%;
+    }
+
+    .background {
+        width: 400px;
+        height: 100%;
+        background-image: url('../images/bg-main-desktop.png');
+        background-size: cover;
+    }
+
+    .top{
+        width: initial;
+    }
+}
+
+

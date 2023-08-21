@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap');
+
+.card {
+    width: 250px;
+}
+
+.card__front {
+    position: absolute;
+    display: inline-block;
+    top: 130px;
+    left: -35px;
+    z-index: 1;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.card__back {
+    position: absolute;
+    display: inline-block;
+    left: 14px;
+    top: 52px;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+
+.date {
+    display: flex;
+    position: absolute;
+    color: white;
+    bottom: 10px;
+    right: 40px;
+}
+
+.number {
+    position: absolute;
+    color: white;
+    bottom: 30px;
+    left: 13px;
+    gap: 10px;
+    font-size: 16px;
+}
+
+.name {
+    position: absolute;
+    color: white;
+    bottom: 10px;
+    left: 13px;
+}
+
+.number__back {
+    position: absolute;
+    top: 52px;
+    left: 206px;
+    color: white;
+    font-size: 10px;
+}
+
+.info {
+    display: flex;
+    font-size: 10px;
+}
+
+.logo {
+    position: absolute;
+    left: 13px;
+    top: 13px;
+    width: 40px;
+}
+
+
+
+@media(min-width:1024px) {
+    .number {
+        font-size: 28px;
+        left: 25px;
+    }
+
+    .card{
+        width: 370px;
+    }
+
+    .card__front{
+        left: 85px;
+        bottom: 14px;
+        top: initial;
+    }
+    
+    .card__back{
+        left: 165px;
+        top: 30px;
+    }
+
+    .number__back{
+    top: 78px;
+    right: 50px;
+    left: initial;
+    font-size: 15px;
+    }
+
+    .info{
+        font-size: 15px;
+    }
+
+    .logo{
+        left: 25px;
+        top: 20px;
+        width: 80px;
+    }
+
+    .name{
+        left: 25px;
+    }
+}
